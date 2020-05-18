@@ -11,4 +11,4 @@ source test-env.sh
 
 create_cluster
 add_node_pool_as
-./hammer.sh
+./create-delete-statefulsets.sh

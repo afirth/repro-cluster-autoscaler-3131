@@ -26,6 +26,10 @@ create_cluster() {
     --no-issue-client-certificate
 }
 
+delete_default_pool() {
+  gcloud container node-pools delete default-pool --cluster $CLUSTER
+}
+
 add_node_pool_as() {
   gcloud container \
     --project $PROJECT node-pools create pool-2 --cluster $CLUSTER \
